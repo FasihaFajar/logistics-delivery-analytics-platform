@@ -35,13 +35,7 @@ Azure SQL Staging Tables
 SQL ETL Pipeline
       │
       ▼
-Data Validation & Cleaning
-      │
-      ▼
-Weather & Traffic Enrichment
-      │
-      ▼
-fact_delivery_performance
+Clean csv file
       │
       ▼
 R Markdown Analytics
@@ -85,7 +79,6 @@ logistics-delivery-analytics-platform/
 │   ├── logistics_delivery_report.Rmd
 │   └── logistics_delivery_report.html
 │
-├── images/
 │
 └── README.md
 ```
@@ -218,27 +211,3 @@ Potential enhancements include:
 * Route optimization using machine learning
 
 ---
-
-# 🎓 Skills Demonstrated
-
-* SQL
-* Azure SQL Database
-* Azure Blob Storage
-* ETL Pipeline Development
-* Data Validation
-* Data Modeling
-* Business Intelligence
-* R
-* ggplot2
-* R Markdown
-* Git
-* GitHub
-
----
-
-# 👤 Author
-
-**Fasiha Fajar**
-
-Honours Bachelor of Mathematics (Computational Mathematics)
-University of Waterloo
