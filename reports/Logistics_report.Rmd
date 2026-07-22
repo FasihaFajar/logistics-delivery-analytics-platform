@@ -1,16 +1,15 @@
 ---
-
-title: "Logistics Delivery Analytics Report"
-author: "Fasiha Fajar"
-date: "`r format(Sys.Date(), '%B %d, %Y')`"
+title: "Logistics Delivery Analytics Platform"
+subtitle: "End-to-End ETL Pipeline & Operational Analytics Report"
 output:
-html_document:
-toc: true
-toc_float: true
-number_sections: true
-theme: cosmo
-code_folding: hide
-------------------
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float:
+      collapsed: false
+    number_sections: true
+    code_folding: hide
+---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -65,7 +64,7 @@ delivery <- delivery %>%
 
 This project analyzes delivery performance data to identify the operational factors associated with delivery speed, cost, and efficiency.
 
-The final dataset was produced through an end-to-end data pipeline involving Python data cleaning, Azure SQL data transformation, condition-data enrichment, and reporting-table development.
+The final dataset was produced through an end-to-end data pipeline involving Azure Blob Storage and MS SQL Server.
 
 The analysis evaluates:
 
@@ -107,9 +106,9 @@ kable(
 
 The project follows this workflow:
 
-**Raw Delivery Data → Python Cleaning → Azure Blob Storage → Azure SQL ETL → Reporting Fact Table → R Markdown Analysis**
+**Raw Delivery Data → Azure Blob Storage → SQL ETL → Reporting Fact Table → R Markdown Analysis**
 
-The Python layer standardized and validated the raw datasets. Azure SQL was used to transform the data, remove invalid records, enrich transactions with weather and traffic conditions, and calculate reporting metrics.
+Azure SQL was used to transform the data, remove invalid records, enrich transactions with weather and traffic conditions, and calculate reporting metrics.
 
 The final `fact_delivery_performance` table was exported as a CSV and analyzed in R.
 
